@@ -1,0 +1,143 @@
+header{
+	background-color: #000000!important;
+}
+a{
+	color: #707070;
+}
+header .btn:hover, header a:hover{
+	opacity:0.8;
+	color: #ffffff!important;
+}
+.fas {
+	font-size: 30px;
+	color:#707070;
+	cursor: pointer;
+}
+.bg-dark {
+    background-color: #000000!important;
+}
+.collapse{
+	justify-content: flex-end;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans TC', sans-serif;
+	height: auto;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+}
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Open Sans', sans-serif;
+	height: auto;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+}
+img{
+	left: 35vw;
+}
+nav a{
+	margin: 0 13px;
+}
+.form-control:focus {
+    outline: none;
+    border: color #707070;;
+    opacity: 0.5;
+}
+.container-small {
+    max-width: 500px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border: none;
+}
+.btn:hover{
+	opacity:0.8;
+	background-color: #000000!important;
+}
+nav li{
+    margin: 0 20px;
+}
+.d-flex{
+    margin-right: 50px;
+}
+.d-flex .btn{
+    margin-left: 20px;
+}
+h2 {
+    text-align: center;
+    margin: 80px 0;
+    color: #666;
+}
+
+label {
+    color: #666;
+}
+
+.login {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+}
+
+a {
+    text-decoration: none;
+    color:#707070;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+.main{
+    margin-top: 90px;
+
+}
+.main .btn{
+    margin-top: 30px;
+}
+@media only screen and (max-width: 768px) {
+	#main h5 {
+	    margin-bottom: 50px;
+	}
+	#latest .col-md-4{
+		margin-bottom: 60px;
+	}
+	footer h4 {
+	    font-size: 17px;
+	    margin-top: 30px;
+	    margin-bottom: 18px;
+	}
+}
+/* bottom */
+footer{
+    background-color: #000000;
+	padding: 80px 0px;
+	border-top: 1px solid rgba(0,0,0,0.09);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+footer .copyrights{
+    color: #707070;
+}
+
+/* returnTop */
+#returnTop {
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+}
+#returnTop img {
+    max-width: 80px;
+    border-radius: 100%;
+}
+#returnTop:hover {
+    opacity: 0.9;
+}

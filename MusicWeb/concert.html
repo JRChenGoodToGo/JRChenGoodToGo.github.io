@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/concert.css">
+    <script src="js/concert.js"></script>
+
+    <!-- <scrip defer="" src="" type="text/javascript"></scrip> -->
+
+
+    <title>活動資訊</title>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <!-- <div class='container'> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="btn" href="homePage.html"><img class="col-md-4" src='pictures/logo.jpg'
+                    width='150px'></button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav mr-auto"> -->
+                <form class="d-flex">
+                    <input class="form-control me-3" type="search" placeholder="搜尋" aria-label="Search">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <form class="nav navbar-nav navbar-right login-before">
+                    <button class="btn" href="collection.html"><i class="fas fa-user"></i></button>
+                </form>
+                <form class="nav navbar-nav navbar-right login-after" hidden>
+                    <li><a href="collection.html"><i class="fas fa-user" id="user">&nbsp;&nbsp;</i>用戶名</a></li>
+                    <li><a href="javascript:void(0)" id="out">登出</a></li>
+                </form>
+
+                <!-- </ul> -->
+            </div>
+        </nav>
+        </div>
+    </header>
+    <!-- 活動列表 -->
+    <section id='main'>
+        <div class='col-md-12' style="padding: 80px 0px;">
+            <div class='outer'>
+                <div class='row align-center'>
+                    <div class='col-md-6 text-center'>
+                        <div class='concertIntro'>
+                            <a href='concert.html'>
+                                <aside class="post-category">
+                                    <a class="tag" href="#" rel="category tag">爵士&nbsp;</a>
+                                    <i>．&nbsp;</i>
+                                    <a class="tag2" href="#" rel="category tag">台中</a>
+                                </aside>
+                                <h3 class="theme">活動名</h3>
+                                <p class='lead'></p>
+                                <p class="player"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class='col-md-6'>
+                        <div class='concertPictures'>
+                            <a href='concert.html'>
+                                <img class="photo" src='pictures/inner.png'>
+                            </a>
+                            <!-- <div class='coll'>
+                                    <i class="fas fa-star fa-2x"></i>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id='second'>
+                <div class="container">
+                    <div class='row'>
+                        <div class='col-md-8 offset-md-2 text-center'>
+                            <h3>關於演出者</h3>
+                            <div class='row'>
+                                <div class='col-md-4 text-center'>
+                                    <img src='pictures/inner.png'>
+                                    <h5>演出者</h5>
+                                </div>
+                                <div class='col-md-8 text-left'>
+                                    <p class='bandIntro'></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id='concertInfo'>
+                <div class="col-md-3"></div>
+                <div class='col-md-6 offset-md-3 text-left'>
+                    <div class='infoBox'>
+                        <h2>活動資訊</h2>
+                        <br>
+                        <div class="col-md-11">
+                            <h4 class="showDate">演出日期&nbsp;&nbsp;<i class="fa fa-calendar-check-o"></i></h4>
+                            <h4 class="showAddr">演出地點&nbsp;&nbsp;<i class="fas fa-map-marker-alt"></i></h4>
+                            <h4 class="showTotalTime">演出總時&nbsp;&nbsp;</tr><i class="far fa-clock"></i></h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span class="ticketKind">票種3</span>
+                                <h3 class="cost">票價3</h3>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3">
+                                <span class="ticketKind">票種3</span>
+                                <h3 class="cost">票價3</h3>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3">
+                                <span class="ticketKind">票種3</span>
+                                <h3 class="cost">票價3</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-md-9">
+                    <a class="btn btn-primary btn-lg" href="order.html" role="button">購票</a>
+                </div>
+            </section>
+
+
+            <div class="container">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 offset-md-2 text-center">
+
+                    <h3></h3>
+                    <br>
+                    <div class="clearfix">
+                        <div class="col-md-6">
+                            <img src='pictures/inner.png'>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <br>
+                            <p class="lead"></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <h3></h3>
+                    <br>
+                    <div class="clearfix">
+                        <div class="col-md-6">
+                            <img src='pictures/inner.png'>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <br>
+                            <p class="lead"></p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <!-- bottom -->
+        <div class="bottom clearfix">
+            <div id="returnTop" class="pull-right" title="return to Top">
+                <img src="pictures/scroll.png" alt="returnTop">
+            </div>
+        </div>
+        <footer style="background-color: black; ">
+            <div class="copyrights">
+                <div class="copyright-text text-center">Copyright © 2021 </div>
+            </div>
+        </footer>
+    </section>
+    <!-- <script src="js/dateFormat.js"></script>
+    <script src="js/jquery-dateformat.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            var url = new URL(location.href)
+            console.log(url.searchParams.get('activityId'))
+            $.ajax({
+                url: 'http://localhost:8081/labboot/pages/showactivity/detail/' + url.searchParams.get('activityId'),
+                type: 'GET',
+                // data: JSON.stringify(data),
+                // dataType: 'json',
+                contentType: 'application/json;charset=UTF-8',
+                statusCode: {
+                    200: function (result) {
+                        $(".bandIntro").text(result.bandIntro)
+                        $(`.tag`).text(result.tagName)
+                        $(`.tag2`).text(result.showAddr.substring(0, 2))
+                        $(`.theme`).text(result.theme)
+                        $(`.lead:eq(0)`).text(result.subTitle)
+                        $(`.player`).text(result.player)
+                        $(`.host`).text(result.host)
+                        $(`.photo`).attr("src", "data:image/png;base64," + result.photo)
+                        $(".showDate").html(`演出日期&nbsp;&nbsp;<i class="fa fa-calendar-check-o"></i> ${$.format.date(result.showDate, "yyyy-MM-dd HH:mm a")}`)
+                        $(".showTotalTime").html(`演出總時&nbsp;&nbsp;</tr><i class="far fa-clock"></i> ${result.showTotalTime}min`)
+                        $(".showAddr").html(`演出地點&nbsp;&nbsp;<i
+                                    class="fas fa-map-marker-alt"></i> ${result.showAddr}`)
+                        $(".lead:eq(1)").text(result.activityIntro)
+                        $(".ticketKind").each(function (index, elem) {
+                            if (result.ticketSettingInfo[index] != undefined) {
+                                $(this).text(result.ticketSettingInfo[index].ticketKind)
+                            } else {
+                                $(this).hide()
+                            }
+                        })
+                        $(".cost").each(function (index, elem) {
+                            if (result.ticketSettingInfo[index] != undefined) {
+                                $(this).text(result.ticketSettingInfo[index].cost + " NTD")
+                            } else {
+                                $(this).hide()
+                            }
+                        })
+                        console.log(result);
+                        console.log(result.ticketSettingInfo[0])
+
+                    },
+                    400: function (result) {
+                        $(`.outer:eq(${index})`).css("display", "none")
+                        console.log("notFound")
+                    }
+                }
+            })
+            $('#user').on("click", function () {
+
+                if (location.href.indexOf('memberId') != -1) {
+                    var url = new URL(location.href)
+                    $(location).attr('href', 'collection.html?memberId=' + url.searchParams.get('memberId'));
+                }
+                else {
+                    $(location).attr('href', 'login.html');
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>

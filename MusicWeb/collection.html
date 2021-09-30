@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/collection.css">
+    <!-- <script src="js/index.js"></script> -->
+
+    <!-- <scrip defer="" src="" type="text/javascript"></scrip> -->
+
+
+    <title>收藏活動</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img class="col-md-1" src='pictures/logo.jpg' width='150' href="homePage.html">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <input class="form-control me-3" type="search" placeholder="搜尋" aria-label="Search">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <button class="btn" href="#"><i class="fas fa-user"></i></button>
+            </div>
+        </nav>
+    </header>
+    <section id='main'>
+        <div id="tab-demo">
+            <ul class="tab-pages">
+                <li>
+                    <div href="#tab01" class="tab">收藏</div>
+                </li>
+                <li>
+                    <div href="#tab02" class="tab">宣傳</div>
+                </li>
+            </ul>
+
+            <div id="tab01" class="tab-inner">
+                <section id='latest'>
+
+                    <div class="container">
+                        <div class='row'>
+                            <div class='col-md-12 text-center'>
+                                <div class='row'>
+                                    <div class='col-md-4 text-left'>
+                                        <div class='outer'>
+                                            <a class="acid" href='concert.html'>
+                                                <div class='upper'>
+                                                    <img class="photo" src='pictures/inner.png'>
+                                                </div>
+                                                <div class='lower'>
+                                                    <div class='innertext'>
+                                                        <span class="storage">尚餘</span>
+                                                        <h4 class="cost"></h4>
+                                                    </div>
+                                                    <h3 class="theme">活動名</h3>
+                                                    <span class="showAddr"><i class="fas fa-map-marker-alt"></i> </span>
+                                                    <br>
+                                                    <span class="showDate"><i class="far fa-clock"></i> 時間</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-4 text-left'>
+                                        <div class='outer'>
+                                            <a class="acid" href='concert.html'>
+                                                <div class='upper'>
+                                                    <img class="photo" src='pictures/inner.png'>
+                                                </div>
+                                                <div class='lower'>
+                                                    <div class='innertext'>
+                                                        <span class="storage">尚餘</span>
+                                                        <h4 class="cost"></h4>
+                                                    </div>
+                                                    <h3 class="theme">活動名</h3>
+                                                    <span class="showAddr"><i class="fas fa-map-marker-alt"></i> </span>
+                                                    <br>
+                                                    <span class="showDate"><i class="far fa-clock"></i> 時間</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-4 text-left'>
+                                        <div class='outer'>
+                                            <a class="acid" href='concert.html'>
+                                                <div class='upper'>
+                                                    <img class="photo" src='pictures/inner.png'>
+                                                </div>
+                                                <div class='lower'>
+                                                    <div class='innertext'>
+                                                        <span class="storage">尚餘</span>
+                                                        <h4 class="cost"></h4>
+                                                    </div>
+                                                    <h3 class="theme">活動名</h3>
+                                                    <span class="showAddr"><i class="fas fa-map-marker-alt"></i> </span>
+                                                    <br>
+                                                    <span class="showDate"><i class="far fa-clock"></i> 時間</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="tab02" class="tab-inner">
+                <div id="app">
+                    <div class="container">
+                        <div class="item_header">
+                            <div class="concertCover">封面</div>
+                            <div class="concertTitle">活動標題</div>
+                            <div class="operate">編輯</div>
+                        </div>
+                        <div class="noResult text-center" style="padding: 160px;">
+                            <h3 class="noResult ">尚無宣傳活動</h3>
+                            <a class="btn btn-primary btn-lg" href="createConcert.html" role="button">新增</a>
+                        </div>
+                    </div>
+                    <script src="js/collection.js"></script>
+                </div>
+            </div>
+            <div id="tab03" class="tab-inner">
+                
+
+            </div>
+    </section>
+    <!-- bottom -->
+    <div class="bottom clearfix">
+        <div id="returnTop" class="pull-right" title="return to Top">
+            <img src="pictures/scroll.png" alt="returnTop">
+        </div>
+    </div>
+    <footer style="background-color: black; ">
+        <div class="copyrights">
+            <div class="copyright-text text-center">Copyright © 2021 </div>
+        </div>
+    </footer>
+    <script script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var url = new URL(location.href);
+            console.log(`location.href=${location.href}`);
+            console.log(`location.href.index=${location.href.indexOf('128')}`);
+            if (location.href.indexOf('memberId') != -1) { // -1表不存在
+                $.ajax({
+                    url: 'http://localhost:8081/labboot/pages/activity/collection/listDetail-per-member/' + url.searchParams.get('memberId'),
+                    type: 'GET',
+                    // data: JSON.stringify(data),
+                    // dataType: 'json',
+                    contentType: 'application/json;charset=UTF-8',
+                    statusCode: {
+                        200: function (result) {
+                            console.log(result);
+
+                            $(".outer").each(function (index, elem) {
+                                // console.log(`index=${index}`);
+                                if (result[index] != undefined) {
+                                    // console.log(result[index])
+                                    for (var i = 0; i < result[index].ticketSettingInfo.length; i++) {
+                                        $(`.storage:eq(${index})`).append(" " + result[index].ticketSettingInfo[i].ticketKind + " : " + result[index].ticketSettingInfo[i].storage + " ")
+                                        $(`.cost:eq(${index})`).append(" " + result[index].ticketSettingInfo[i].ticketKind + " : $ " + result[index].ticketSettingInfo[i].cost + " ")
+                                    }
+                                    $(`.acid:eq(${index})`).attr("href", "concert.html" + '?activityId=' + result[index].activityId + '&memberId=' + url.searchParams.get('memberId'))
+                                    $(`.theme:eq(${index})`).text(result[index].theme)
+                                    $(`.photo:eq(${index})`).attr("src", "data:image/png;base64," + result[index].photo)
+                                    $(`.showAddr:eq(${index})`).append(result[index].showAddr)
+                                    $(`.showDate:eq(${index})`).append(`${$.format.date(result[index].showDate, "yyyy-MM-dd HH:mm a")}`)
+
+                                } else if (result != undefined) {
+                                    for (var i = 0; i < result.ticketSettingInfo.length; i++) {
+                                        $(`.storage:eq(${index})`).append(" " + result.ticketSettingInfo[i].ticketKind + " : " + result.ticketSettingInfo[i].storage + " ")
+                                        $(`.cost:eq(${index})`).append(" " + result.ticketSettingInfo[i].ticketKind + " : " + result.ticketSettingInfo[i].cost + "NTD")
+                                    }
+                                    $(`.acid:eq(${index})`).attr("href", "concert.html" + '?activityId=' + result.activityId + '&memberId=' + url.searchParams.get('memberId'))
+                                    $(`.theme:eq(${index})`).text(result.theme)
+                                    $(`.photo:eq(${index})`).attr("src", "data:image/png;base64," + result.photo)
+                                    $(`.showAddr:eq(${index})`).append(result.showAddr)
+                                    $(`.showDate:eq(${index})`).append(`${$.format.date(result.showDate, "yyyy-MM-dd HH:mm a")}`)
+                                    console.log(result)
+                                    $(`.outer:eq(${1})`).hide()
+                                    $(`.outer:eq(${2})`).hide()
+                                } else {
+                                    $(`.outer:eq(${index})`).hide()
+                                }
+                            })
+                            // 
+                            // $(`.tag`).text(result.tagName)
+                            // $(`.theme`).text(result.theme)
+                            // $(`.lead`).text(result.subTitle)
+                            // $(`.player`).text(result.player)
+                            // $(`.host`).text(result.host)
+                            // $(`.photo`).attr("src", "data:image/png;base64," + result.photo)
+                            // $(".showDate").html(`演出日期&nbsp;&nbsp;<i class="fa fa-calendar-check-o"></i> ${$.format.date(result.showDate,"yyyy-MM-dd HH:mm a")}`)
+                            // $(".showTotalTime").html(`演出總時&nbsp;&nbsp;</tr><i class="far fa-clock"></i> ${result.showTotalTime}min`)
+                            // $(".showAddr").html(`演出地點&nbsp;&nbsp;<i
+                            //             class="fas fa-map-marker-alt"></i> ${result.showAddr}`)
+                            // $(".ticketKind").each(function(index, elem){
+                            //     if(result.ticketSettingInfo[index]!=undefined){
+                            //         $(this).text(result.ticketSettingInfo[index].ticketKind)
+                            //     }else{
+                            //         $(this).hide()
+                            //     }
+                            // })
+                            // $(".cost").each(function(index, elem){
+                            //     if(result.ticketSettingInfo[index]!=undefined){
+                            //         $(this).text(result.ticketSettingInfo[index].cost+" NTD")
+                            //     }else{
+                            //         $(this).hide()
+                            //     }
+                            // })
+
+
+                            // console.log(result.ticketSettingInfo[0])
+
+                        },
+                        400: function (result) {
+                            $(`.outer:eq(${index})`).css("display", "none");
+                            console.log("notFound");
+                        },
+                        500: function (result) {
+                            $(`.outer`).hide();
+                        }
+                    }
+                })
+                // }else{
+                //     $.ajax({
+                //         url: 'http://localhost:8081/labboot/pages/showactivity/detail/' + url.searchParams.get('memberId'),
+                //         type: 'GET',
+                //         // data: JSON.stringify(data),
+                //         // dataType: 'json',
+                //         contentType: 'application/json;charset=UTF-8',
+                //         statusCode: {
+                //             200: function (result) {
+
+                //                 $(".outer").each(function (index, elem) {
+                //                     if (result[index] != undefined) {
+                //                         // console.log(result[index])
+                //                         for (var i = 0; i < result.ticketSettingInfo.length; i++) {
+                //                             $(`.storage:eq(${index})`).append(" " + result[index].ticketSettingInfo[i].ticketKind + " : " + result.ticketSettingInfo[i].storage + " ")
+                //                             $(`.cost:eq(${index})`).append(" " + result[index].ticketSettingInfo[i].ticketKind + " : " + result.ticketSettingInfo[i].cost + " ")
+                //                         }
+                //                         $(`.acid:eq(${index})`).attr("href", "concert.html" + '?activityId=' + result[index].activityId)
+                //                         $(`.theme:eq(${index})`).text(result[index].theme)
+                //                         $(`.photo:eq(${index})`).attr("src", "data:image/png;base64," + result[index].photo)
+                //                         $(`.showAddr:eq(${index})`).append(result[index].showAddr)
+                //                         $(`.showDate:eq(${index})`).append(`${$.format.date(result[index].showDate, "yyyy-MM-dd HH:mm a")}`)
+
+                //                     } else if (result != undefined) {
+                //                         for (var i = 0; i < result.ticketSettingInfo.length; i++) {
+                //                             $(`.storage:eq(${index})`).append(" " + result.ticketSettingInfo[i].ticketKind + " : " + result.ticketSettingInfo[i].storage + " ")
+                //                             $(`.cost:eq(${index})`).append(" " + result.ticketSettingInfo[i].ticketKind + " : " + result.ticketSettingInfo[i].cost + "NTD")
+                //                         }
+                //                         $(`.acid:eq(${index})`).attr("href", "concert.html" + '?activityId=' + result.activityId)
+                //                         $(`.theme:eq(${index})`).text(result.theme)
+                //                         $(`.photo:eq(${index})`).attr("src", "data:image/png;base64," + result.photo)
+                //                         $(`.showAddr:eq(${index})`).append(result.showAddr)
+                //                         $(`.showDate:eq(${index})`).append(`${$.format.date(result.showDate, "yyyy-MM-dd HH:mm a")}`)
+                //                         console.log(result)
+                //                         $(`.outer:eq(${1})`).hide()
+                //                         $(`.outer:eq(${2})`).hide()
+                //                     } else {
+                //                         $(`.outer:eq(${index})`).hide()
+                //                     }
+                //                 })
+                //                 // 
+                //                 // $(`.tag`).text(result.tagName)
+                //                 // $(`.theme`).text(result.theme)
+                //                 // $(`.lead`).text(result.subTitle)
+                //                 // $(`.player`).text(result.player)
+                //                 // $(`.host`).text(result.host)
+                //                 // $(`.photo`).attr("src", "data:image/png;base64," + result.photo)
+                //                 // $(".showDate").html(`演出日期&nbsp;&nbsp;<i class="fa fa-calendar-check-o"></i> ${$.format.date(result.showDate,"yyyy-MM-dd HH:mm a")}`)
+                //                 // $(".showTotalTime").html(`演出總時&nbsp;&nbsp;</tr><i class="far fa-clock"></i> ${result.showTotalTime}min`)
+                //                 // $(".showAddr").html(`演出地點&nbsp;&nbsp;<i
+                //                 //             class="fas fa-map-marker-alt"></i> ${result.showAddr}`)
+                //                 // $(".ticketKind").each(function(index, elem){
+                //                 //     if(result.ticketSettingInfo[index]!=undefined){
+                //                 //         $(this).text(result.ticketSettingInfo[index].ticketKind)
+                //                 //     }else{
+                //                 //         $(this).hide()
+                //                 //     }
+                //                 // })
+                //                 // $(".cost").each(function(index, elem){
+                //                 //     if(result.ticketSettingInfo[index]!=undefined){
+                //                 //         $(this).text(result.ticketSettingInfo[index].cost+" NTD")
+                //                 //     }else{
+                //                 //         $(this).hide()
+                //                 //     }
+                //                 // })
+
+
+                //                 // console.log(result.ticketSettingInfo[0])
+
+                //             },
+                //             400: function (result) {
+                //                 $(`.outer:eq(${index})`).css("display", "none")
+                //                 console.log("notFound")
+                //             }
+                //         }
+                //     })
+            }
+        })
+    </script>
+</body>
+
+</html>

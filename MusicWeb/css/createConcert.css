@@ -1,0 +1,551 @@
+html,
+header{
+	background-color: #000000!important;
+}
+.fas {
+	font-size: 30px;
+	color:#707070;
+	cursor: pointer;
+}
+.bg-dark {
+    background-color: #000000!important;
+}
+.collapse{
+	justify-content: flex-end;
+    display: flex!important;
+    flex-basis: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+	left: 45vw;
+}
+nav a{
+	margin: 0 13px;
+}
+.navbar{
+    border: 0;
+    margin: 0px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border: none;
+}
+.btn:hover{
+	opacity:0.8;
+	background-color: #000000!important;
+}
+
+#main {
+	padding: 80px 0px;
+}
+#main h1{
+	font-size: 35px;
+}
+
+#main .row{
+	margin: 30px auto;
+}
+#main select{
+	height: 25px;
+	margin: 30px;
+}
+#main .outer h3, #latest h3{
+	margin-bottom: 70px;
+	font-size: 32px;
+}
+#main img{
+	border-radius: 0%;
+    width: 480px;
+    height: 270px;
+}
+#main h5{
+	margin-top: 22px;
+    font-size: 16px;
+}
+#main .outer{
+    margin-bottom: 70px;
+}
+#main .container .col-md-8 .row{
+    margin-bottom: 70px;
+}
+#main .concertPictures{
+	position:relative;
+}
+#main .coll{
+	position:absolute;
+	bottom:5%;
+	right: 30px;
+}
+
+.input-group-addon{
+    width:103px;
+}
+
+
+#main .rec-cover {
+    margin-top: 20px;
+    position: relative;
+    width: 635px;
+    height: 450px;
+    background: #eee;
+}
+#main{
+	padding: 80px 0px;
+}
+#main h3{
+	margin-bottom: 70px;
+	font-size: 32px;
+}
+#main img{
+    width: 108px;
+}
+#main h5{
+	margin-top: 22px;
+    font-size: 16px;
+}
+/* body {
+    margin-top: 40px;
+    margin-bottom: 90px;
+} */
+
+.concert-cover {
+    margin-top: 20px;
+    position: relative;
+    width: 635px;
+    height: 450px;
+    background: #cccccc;
+}
+
+.concert-cover .img-upload {
+    position: absolute;
+    width: 635px;
+    height: 450px;
+    opacity: 0;
+}
+
+.concert-cover .img-view {
+    width: 635px;
+    height: auto;
+}
+
+.concert-cover .img-upload-info {
+    position: absolute;
+    width: 635px;
+    line-height: 420px;
+    text-align: center;
+    color: #999;
+}
+
+.concert-cover .img-upload-stop {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #666;
+    transition: color 200ms;
+    display: none;
+}
+
+.concert-cover .img-upload-stop:hover {
+    color:#000000;
+}
+
+.performerPicture {
+    position: relative;
+	border-radius: 100%;
+    width: 108px;
+    height: 108px;
+    background: #cccccc;
+}
+
+.performerPicture .img-upload {
+    position: absolute;
+	border-radius: 100%;
+    width: 108px;
+    height: 108px;
+    opacity: 0;
+}
+
+.performerPicture .img-view {
+	border-radius: 100%;
+    width: 108px;
+    height: 108px;
+}
+
+.performerPicture .img-upload-info {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    line-height: 6;
+    text-align: center;
+    color: #999;
+}
+
+.performerPicture .img-upload-stop {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #666;
+    transition: color 200ms;
+    display: none;
+}
+
+.performerPicture .img-upload-stop:hover {
+    color:#000000;
+}
+
+#second{
+    background-color: #ffffff;
+	padding: 0px 0px;
+    margin-top: 100px;
+}
+#second h3, #latest h3{
+	margin-bottom: 70px;
+	font-size: 32px;
+}
+
+#second h5{
+	margin-top: 22px;
+    font-size: 16px;
+}
+#concertInfo {
+	background: #cccccc;
+	margin: 0px 0px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#concertInfo h4{
+	font-size: 19px;
+    margin-top: 18px;
+    margin-bottom: 50px;
+}
+
+#concertInfo .col-md-6 .infoBox{
+    background-color: rgb(255, 255, 255);
+    border: 5px;
+    border-radius: 20px;
+    border-style: dotted ;
+    border-color:  #cccccc;
+	box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.08);
+	padding: 70px;
+	margin: 0 5px;
+}
+
+#concertInfo .col-md-3 a{
+	color:rgb(255, 255, 255);
+    text-decoration: none;
+    width: auto;
+}
+#concertInfo .btn{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#concertInfo a{
+	color:black;
+	text-decoration: none;
+}
+#concertInfo i{
+	margin-right:5px;
+}
+.container .col-md-6 p{
+    width: 120%;
+    text-align: left;
+}
+.container .col-md-6 .lead{
+    width: 120%;
+    text-align:center;
+}
+.concert-info * {
+    margin-top: 20px;
+}
+.input-group-text{
+    display: table-cell;
+    background-color: #cccccc;
+}
+.concert-material {
+    margin-top: 40px;
+}
+
+h3 {
+    color: #666;
+    margin-left: 10px;
+}
+
+.concert-mores {
+    position: relative;
+    margin-top: 40px;
+}
+
+.concert-mores ol {
+    font-size: 20px;
+}
+
+.concert-mores span {
+    font-size: 14px;
+}
+
+.concert-mores ol li {
+    margin-top: 40px;
+}
+
+.concert-mores .concert-more {
+    position: relative;
+    width: 300px;
+    height: 254px;
+    background: #eee;
+}
+
+.concert-mores .img-upload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 254px;
+    opacity: 0;
+}
+
+.concert-mores .img-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+}
+
+.concert-mores .img-upload-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    line-height: 254px;
+    text-align: center;
+    color: #999;
+}
+
+.concert-mores .img-upload-stop {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #666;
+    transition: color 200ms;
+    display: none;
+}
+
+.concert-mores .img-upload-stop:hover {
+    color:#000000;
+}
+
+.concert-mores .add-more,
+.remove-more {
+    font-size: 20px;
+    color: #999;
+}
+
+.concert-mores .more-col {
+    position: relative;
+}
+
+.concert-mores .add-more {
+    position: absolute;
+    right: 12px;
+    top: 200px;
+}
+
+.concert-mores .remove-more {
+    position: absolute;
+    right: 13px;
+    top: 230px;
+}
+
+.concert-mores .add-more:hover,
+.remove-more:hover {
+    color:#000000;
+}
+
+.concert-btn {
+    position: relative;
+}
+
+.concert-category {
+    position: absolute;
+    top: 40px;
+    left: 176px;
+
+}
+.concert-create {
+    position: absolute;
+    top: 40px;
+    left: 405px;
+}
+/* bootstrap */
+.glyphicon {
+    /* position: relative;
+    top: 1px; */
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    /* -moz-osx-font-smoothing: grayscale; */
+}
+.glyphicon-plus:before {
+    content: "\002b";
+
+}
+.glyphicon-minus:before {
+    content: "\2212";
+}
+input[type=file] {
+    display: block;
+}
+input[type="file" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+}
+
+input {
+    /* -webkit-writing-mode: horizontal-tb !important; */
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    -webkit-rtl-ordering: logical;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+} */
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+    height: 46px; 
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.input-group-addon {
+    width: 103px;
+    color: #555;
+    text-align: center;
+    background-color: #cccccc;
+    border: 1px solid #ccc;
+}
+
+
+.input-group-addon, .input-group-btn {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.input-group .form-control, .input-group-addon, .input-group-btn {
+    display: table-cell;
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: auto; 
+    margin-bottom: 0;
+}
+.concert-mores .concert-more {
+    position: relative;
+    width: 300px;
+    height: 254px;
+    background: #cccccc;
+}
+/* @media (min-width: 992px){
+.concert-more {
+    width: 58.33333333%;
+}
+} */
+
+@media (min-width: 992px){
+.col-md-5, .col-md-7{
+    float: left;
+}
+}
+/* .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+} */
+
+/* returnTop */
+#returnTop {
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+}
+#returnTop img {
+    max-width: 80px;
+    border-radius: 100%;
+}
+#returnTop:hover {
+    opacity: 0.9;
+}
+footer{
+	border-top: 1px solid rgba(0,0,0,0.09);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+footer .copyrights{
+    color: #707070;
+
+}

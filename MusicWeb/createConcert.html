@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- <link rel="stylesheet" href="lib/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script>
+    <script src="lib/jquery/1.12.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/createConcert.css">
+    <script src="js/createConcert.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            if ($(sessionScope.member != null)) {
+                $(".login-before").addStyle("display: none;");
+                $(".login-after").removeStyle("display: none;");
+            }
+
+            $("#out").click(function () {
+                var flag = window.confirm("成功登出");
+                if (flag) {
+                    window.location.href = "member?oper=out";
+                }
+            });
+
+            $(".concert-info>textarea").change(function () {
+                var text = $(this).val();
+                var des = text.replace(/\r\n/g, '<br/>').replace(/\n/g, '<br/>').replace(/\s/g, ' ');
+
+                $(".concert-info>input").val(des);
+
+            });
+            $(".concert-material>textarea").change(function () {
+                var text = $(this).val();
+                var des = text.replace(/\r\n/g, '<br/>').replace(/\n/g, '<br/>').replace(/\s/g, ' ');
+                $(".concert-material>input").val(des);
+            });
+        });
+    </script>
+
+    <title>編輯活動</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img class="col-md-1" src='pictures/logo.jpg' width='150' href="homePage.html">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <input class="form-control me-3" type="search" placeholder="搜尋" aria-label="Search">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+
+                <form class="nav navbar-nav navbar-right login-before">
+                    <button class="btn" href="login.html"><i class="fas fa-user"></i></button>
+                </form>
+                <form class="nav navbar-nav navbar-right login-after" style="display: none;">
+                    <li><a href="#"><i class="fas fa-user">&nbsp;&nbsp;</i>用戶名</a></li>
+                    <li><a href="javascript:void(0)" id="out">登出</a></li>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <div class="main" style="padding: 80px 0px;">
+        <div class="container" style="margin: bottom 20px;">
+            <!-- <div class="col-md-1"></div> -->
+            <h1>編輯活動</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-6" style=" top: 50px;">
+                    <div class="concertTitle">
+                        <form action="createConcert" method="post" enctype="multipart/form-data">
+
+                            <div class="concert-title input-group input-group-lg" style="margin-top: 10px;">
+                                <span class="input-group-addon" id="theme">活動標題</span>
+                                <input class="form-control" type="text" placeholder="" name="concertTitle"
+                                    style="block-size: auto;" required />
+                            </div>
+
+                            <div class="concert-title input-group input-group-lg" style="margin-top: 10px;">
+                                <span class="input-group-addon" id="subTitle">副標題</span>
+                                <input class="form-control" type="text" placeholder="" name="concertTitle"
+                                    style="block-size: auto;" required />
+                            </div>
+
+                            <div class="concert-title input-group input-group-lg" style="margin-top: 10px;">
+                                <span class="input-group-addon" id="tagName">演出類型</span>
+                                <input class="form-control" type="text" placeholder="" name="concertTitle"
+                                    style="block-size: auto;" required />
+                            </div>
+                            <!-- <div class="row concertTag" style="margin: auto;">
+                                <textarea class="form-control" rows="1" placeholder="標籤" required style="width: 100px;"></textarea>
+                                <textarea class="form-control" rows="1" placeholder="標籤" required style="width: 100px;"></textarea>
+                                <input type="hidden" id="tag">
+                            </div> -->
+
+                            <div class="concert-info">
+                                <textarea class="form-control" rows="12" placeholder="活動介紹" required></textarea>
+                                <input type="hidden" name="concertInfo">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <form action="createConcert" method="post" enctype="multipart/form-data">
+                        <div class="concert-cover">
+                            <span class="img-upload-info glyphicon glyphicon-plus">封面</span>
+                            <input type="file" class="img-upload" id="photo" name="photo" required />
+                            <img class="img-view" src="" title="" />
+                            <span class="img-upload-stop glyphicon glyphicon-remove" title="Re-upload"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section id='second'>
+            <div class="container">
+                <div class='row'>
+                    <div class='col-md-8 offset-md-2 text-center'>
+                        <h3>關於演出者</h3>
+                        <div class='row'>
+                            <div class='col-md-3'>
+                                <form action="createConcert" method="post" enctype="multipart/form-data">
+                                    <div class="performerPicture">
+                                        <span class="img-upload-info glyphicon glyphicon-plus">頭像</span>
+                                        <input type="file" class="img-upload" name="performerPicture" required />
+                                        <img class="img-view" src="" title="" />
+                                        <span class="img-upload-stop glyphicon glyphicon-remove"
+                                            title="Re-upload"></span>
+                                    </div>
+                                </form>
+                                <div class="performer-name">
+                                    <textarea class="form-control" rows="1" placeholder="演出者" required></textarea>
+                                    <input type="hidden" id="player">
+                                </div>
+                            </div>
+                            <div class="col-md-8 text-left">
+                                <div class="performer-title">
+                                    <textarea class="form-control" rows="1" placeholder="公司/單位名稱" required></textarea>
+                                    <input type="hidden" id="host">
+                                </div>
+                                <div class="performer-intro">
+                                    <textarea class="form-control" rows="12" placeholder="介紹" required></textarea>
+                                    <input type="hidden" id="bandIntro">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id='concertInfo'>
+        <div class="col-md-3"></div>
+        <div class='col-md-6 offset-md-3 text-left'>
+            <div class='infoBox'>
+                <h2>活動資訊</h2>
+                <br>
+                <div class="col-md-11">
+                    <h4>演出日期&nbsp;&nbsp;<i class="fa fa-calendar-check-o"></i><input type="text" class="col-md-8"
+                            placeholder="YYYY-MM-DD 00:00PM" id="showDate"> </h4>
+                    <h4>演出地點&nbsp;&nbsp;<i class="fas fa-map-marker-alt"></i></i><input type="text" class="col-md-8"
+                            placeholder="aaaaaaaaaaaaaaaaaaaaa" id="showAddr">
+                    </h4>
+                    <h4>演出總時&nbsp;&nbsp;<i class="far fa-clock"></i><input type="number" class="col-md-4"
+                            placeholder=" ttt分" id="showTotalTime"></h4>
+                    <!-- <h4>售票截止&nbsp;&nbsp;<i class="fa fa-calendar-check-o"></i><input type="text" class="col-md-8"
+                            placeholder="YYYY-MM-DD 00:00PM" id="soldDeadline"></h4> -->
+
+                </div>
+                <ul>
+                    <li class="clearfix">
+                        <span>
+                            <!-- <div class="row"> -->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">票種</span>
+                                <input type="text" class="form-control" id="ticketKind">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">票價</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+                                    id="cost">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">票數</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+                                    id="storage">
+                            </div>
+                            <!-- <input class="form-control col-md-12" type="text" placeholder="票種" name="tk-name"
+                                        style="background-color: grey;"></input>
+                                    <input class="form-control col-md-12" type="text" placeholder="票價" name="tk-cost"
+                                        style="block-size: auto;" required /> -->
+
+                            <!-- <input type="number" class="col-md-6" placeholder="銷售票數" name="tk-num" aria-label="Amount (to the nearest dollar)"> -->
+                            <!-- </div> -->
+
+                            <div class="moreTicket-col">
+                                <div class="add-moreticket glyphicon glyphicon-plus" title="add-moreticket"></div>
+                                <div class="remove-moreticket glyphicon glyphicon-minus" title="delete-moreticket">
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                        </span>
+                    </li>
+                </ul>
+                <div class="concert-title input-group input-group-lg" style="margin-top: 10px;">
+                    <span class="input-group-addon" id="theme" style="background-color: black;
+                    color: white;">購票連結</span>
+                    <input class="form-control" type="text" placeholder="" name="concertTitle"
+                        style="block-size: auto;" required />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container" style="margin-bottom: 100px;">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <form action="createConcert" method="post" enctype="multipart/form-data">
+                <!--  -->
+                <div class="concert-mores">
+                    <h3>更多介紹</h3>
+                    <ol>
+                        <li class="clearfix"><span>
+                                <div class="col-md-5">
+                                    <textarea class="form-control" rows="12" placeholder="新增段落" name="moreInfo"
+                                        id="activityIntro"></textarea>
+                                </div>
+                                <div class="col-md-7 concert-more">
+                                    <span class="img-upload-info glyphicon glyphicon-plus">
+                                        配圖</span> <input type="file" class="img-upload" name="moreFile" />
+                                    <img class="img-view" src="" title="" /> <span
+                                        class="img-upload-stop glyphicon glyphicon-remove" title="re-post"></span>
+                                </div>
+                                <div class="more-col">
+                                    <div class="add-more glyphicon glyphicon-plus" title="add-more"></div>
+                                    <div class="remove-more glyphicon glyphicon-minus" title="delete-more">
+                                    </div>
+                                </div>
+                            </span></li>
+                        <!-- <li class="clearfix"><span>
+                                <div class="col-md-5">
+                                    <textarea class="form-control" rows="12" placeholder="新增段落"
+                                        name="moreInfo"></textarea>
+                                </div>
+                                <div class="col-md-7 concert-more">
+                                    <span class="img-upload-info glyphicon glyphicon-plus">
+                                        配圖</span> <input type="file" class="img-upload" name="moreFile" />
+                                    <img class="img-view" src="" title="" /> <span
+                                        class="img-upload-stop glyphicon glyphicon-remove" title="re-post"></span>
+                                </div>
+                                <div class="more-col">
+                                    <div class="add-more glyphicon glyphicon-plus" title="add-more"></div>
+                                    <div class="remove-more glyphicon glyphicon-minus" title="delete-more"></div>
+                                </div>
+                            </span>
+                        </li> -->
+                    </ol>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3 offset-md-9">
+            <a class="btn btn-primary btn-lg" role="button" id="upload" href="">上傳</a>
+        </div>
+    </div>
+
+
+    <!-- bottom -->
+    <div>
+        <input id="testF" type="button" >
+    </div>
+    <div class="bottom clearfix">
+        <div id="returnTop" class="pull-right" title="return to Top">
+            <img src="pictures/scroll.png" alt="returnTop">
+        </div>
+    </div>
+    <footer style="background-color: black; ">
+        <div class="copyrights">
+            <div class="copyright-text text-center">Copyright © 2021 </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"> // 轉換日期格式的插件</script> 
+    <script>
+        // try to see result of date convertion
+        $(document).ready(function(){
+            $('#testF').on('click', function(){
+                console.log(`showDate= ${$('#showDate').val()}`);
+                let dateConvert = new Date($('#showDate').val()).toISOString();
+                console.log(dateConvert);
+                console.log(`showDate HH:mm= ${$.format.date($('#showDate').val(), "HH:mm")}`);
+            })
+        })
+
+        $(document).ready(function () {
+            let kind = new Array
+            let cost = new Array
+            let stor = new Array
+            $('#ticketKind').each(function (index, elem) {
+                kind[index] = $('#ticketKind').val(),
+                    cost[index] = $('#cost').val(),
+                    stor[index] = $('#storage').val()
+            })
+            let photodata
+            $('#photo').bind('change', function (event) {
+                // console.log(`#photo.val()= ${$('#photo').val()}`); // C:\fakepath\12_ShiShi2.jpg
+                console.log(`#photo.val()= ${$('#photo')}`);
+                var imageUrl = getObjectURL($(this)[0].files[0]);
+                // console.log(`photo-files= ${$(this)[0].files[0]}`); // [object File]
+                // console.log(`imageUrl= ${imageUrl}`); // blob:http://127.0.0.1:5500/3aed976d-f5a9-455e-a585-28898723b40b
+                convertImgToBase64(imageUrl, function (base64Img) {
+                    console.log(`base64Img= ${base64Img}`);
+
+                    //base64Img為轉好的base64,放在img src直接前臺展示(<img src="data:image/jpg;base64,/9j/4QMZRXh...." />)
+                    //alert(base64Img);
+                    // $("#base").attr("src", base64Img);
+                    //base64轉圖片不需要base64的字首data:image/jpg;base64
+                    //alert(base64Img.split(",")[1]);
+                    // console.log(base64Img)
+                    photodata = base64Img.split(",")[1]
+                    // console.log(`photoData= ${photodata}`);
+                });
+                event.preventDefault();
+            });
+
+
+
+
+
+            $('#upload').on('click', function () {
+                console.log("hi");
+                let data = {
+                    "host": $('#host').val(),
+                    "player": $('#player').val(),
+                    "theme": $('#theme').val(),
+                    "subTitle": $('#subTitle').val(),
+                    "activityIntro": $('#activityIntro').val(),
+                    "bandIntro": $('#bandIntro').val(),
+                    "tagName": $('#tagName').val(),
+                    "tape": "tape086",
+                    "purchaseWeb": "purchaseWeb086",
+                    "memberId": 13,
+                    "showAddr": $('#showAddr').val(),
+                    "showPlace": $('#showAddr').val(),
+                    // "showDate": $.format.date($('#showDate').val(), "yyyy-MM-ddTHH:mm:ss"),
+                    "showDate": new Date($('#showDate').val()).toISOString(),
+                    "enterTime": $.format.date($('#showDate').val(), "HH:mm"),
+                    "showTime": $.format.date($('#showDate').val(), "HH:mm"),
+                    "showTotalTime": $('#showTotalTime').val(),
+                    "soldDeadline": $.format.date($('#soldDeadline').val(), "yyyy-MM-ddTHH:mm:ss"),
+                    "ticketKind1": kind[0],
+                    "cost1": cost[0],
+                    "storage1": stor[0],
+                    "ticketKind2": kind[1],
+                    "cost2": cost[1],
+                    "storage2": stor[1],
+                    "photo": photodata
+                }
+                $.ajax({
+                    url: "http://localhost:8081/labboot/pages/activity/edit/users/upload",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(data),
+                    statusCode: {
+                        201: function () {
+                            $(location).attr('href', 'homePage.html/');
+                        },
+                        500: function () {
+                            alert('fail')
+                        }
+                    }
+                })
+                console.log(`data= ${data}`);
+            })
+        })
+        function convertImgToBase64(url, callback, outputFormat) {
+            console.log(`url= ${url}`);
+            console.log(`callback= ${callback}`);
+            console.log(`outputFormat= ${outputFormat}`);
+
+            //html5 的convas畫布
+            var canvas = document.createElement('CANVAS');
+            var ctx = canvas.getContext('2d');
+            var img = new Image;
+            img.crossOrigin = 'Anonymous';
+            img.onload = function () { //採非同步執行
+                var width = img.width;
+                var height = img.height;
+                // 按比例壓縮4倍
+                //var rate = (width<height ? width/height : height/width)/4;
+                //原比例生成畫布圖片
+                var rate = 1;
+                canvas.width = width * rate;
+                canvas.height = height * rate;
+                ctx.drawImage(img, 0, 0, width, height, 0, 0, width * rate, height * rate);
+                // canvas.toDataURL 返回的是一串Base64編碼的URL，當然,瀏覽器自己肯定支援 
+                var dataURL = canvas.toDataURL(outputFormat || 'image/png');
+                console.log(`dataURL= ${dataURL}`);
+                callback.call(this, dataURL);
+                canvas = null;
+            };
+            img.src = url;
+        }
+
+        //createobjecturl()靜態方法建立一個包含了DOMString代表引數物件的URL。該url的宣告週期是在該視窗中.也就是說建立瀏覽器建立了一個代表該圖片的Url.
+        function getObjectURL(file) {
+            var url = null;
+            if (window.createObjectURL != undefined) {
+                // basic
+                url = window.createObjectURL(file);
+            } else if (window.URL != undefined) {
+                // mozilla(firefox)
+                url = window.URL.createObjectURL(file);
+            } else if (window.webkitURL != undefined) {
+                //web_kit or chrome
+                url = window.webkitURL.createObjectURL(file);
+            }
+            return url;
+        }
+    </script>
+</body>
+
+</html>

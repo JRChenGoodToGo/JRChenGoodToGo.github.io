@@ -1,0 +1,217 @@
+header{
+	background-color: #000000!important;
+}
+a{
+	color: #707070;
+}
+header .btn:hover, header a:hover{
+	opacity:0.8;
+	color: #ffffff!important;
+}
+.fas {
+	font-size: 30px;
+	color:#707070;
+	cursor: pointer;
+}
+.bg-dark {
+    background-color: #000000!important;
+}
+.collapse{
+	justify-content: flex-end;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans TC', sans-serif;
+	height: auto;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+}
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Open Sans', sans-serif;
+	height: auto;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+}
+img{
+	left: 35vw;
+}
+nav a{
+	margin: 0 13px;
+}
+.btn{
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border: none;
+}
+.btn:hover{
+	opacity:0.8;
+	background-color: #000000!important;
+}
+#main{
+	padding: 0px 0px;
+}
+
+#main h1{
+	font-size: 35px;
+}
+#main .row{
+	margin: 0px auto;
+}
+#main select{
+	height: 25px;
+	margin: 30px;
+}
+#main .outer h3, #latest h3{
+	margin-bottom: 70px;
+	font-size: 32px;
+}
+#main .concertPictures img{
+	border-radius: 0%;
+    width: 50vw;
+    height: 70vh;
+}
+#main h5{
+	margin-top: 22px;
+    font-size: 16px;
+}
+#main .outer{
+    margin-bottom: 70px;
+}
+.post-category {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    letter-spacing: .05em;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #787878;
+    padding: 2px 5px 2px 3px;
+    width: fit-content;
+    display: inline-block;
+}
+
+#main .concertIntro{
+    padding-top: 150px;
+}
+#main .concertPictures{
+	position:relative;
+}
+#main .coll{
+	position:absolute;
+	bottom:5%;
+	right: 30px;
+}
+#main .concertIntro h3{
+    color: #000000;
+}
+p{
+	font-size: 20px;
+    line-height: 26px;
+    color: #707070;
+}
+p.lead{
+	color: black;
+	line-height: 31px;
+}
+#second{
+    background-color: #ffffff;
+	padding: 80px 0px;
+}
+#second h3, #latest h3{
+	margin-bottom: 70px;
+	font-size: 32px;
+}
+#second img{
+	border-radius: 100%;
+    width: 108px;
+}
+#second h5{
+	margin-top: 22px;
+    font-size: 16px;
+}
+#concertInfo {
+	background: #cccccc;
+	margin: 100px 0px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#concertInfo h4{
+	font-size: 19px;
+    margin-top: 18px;
+    margin-bottom: 50px;
+}
+
+#concertInfo .col-md-6 .infoBox{
+    background-color: rgb(255, 255, 255);
+    border: 5px;
+    border-radius: 20px;
+    border-style: dotted ;
+    border-color:  #cccccc;
+	box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.08);
+	padding: 70px;
+	margin: 0 5px;
+}
+
+#concertInfo .col-md-3 a{
+	color:rgb(255, 255, 255);
+    text-decoration: none;
+    width: auto;
+}
+#concertInfo .btn{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#concertInfo a{
+	color:black;
+	text-decoration: none;
+}
+#concertInfo i{
+	margin-right:5px;
+}
+.container .col-md-6 p{
+    width: 120%;
+    text-align: left;
+}
+.container .col-md-6 .lead{
+    width: 120%;
+    text-align:center;
+}
+/* footer */
+.footer {
+    margin-top: 40px;
+    background: #eee;
+    opacity: 0.9;
+}
+
+.footer * {
+    margin-left: 2px;
+    margin-bottom: 10px;
+    color: #666;
+}
+footer{
+	border-top: 1px solid rgba(0,0,0,0.09);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+footer .copyrights{
+    color: #707070;
+
+}
+/* returnTop */
+#returnTop {
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+}
+#returnTop img {
+    max-width: 80px;
+    border-radius: 100%;
+}
+#returnTop:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script>
+    <script src="lib/jquery/1.12.4/jquery.min.js"></script>
+    <script src="lib/bootstrapValidator/js/bootstrapValidator.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/register.css">
+    <!-- <script src="js/register.js"></script> -->
+
+    <!-- <scrip defer="" src="" type="text/javascript"></scrip> -->
+
+    <title>註冊</title>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <!-- <div class='container'> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="btn" href="homePage.html"><img class="col-md-4" src='pictures/logo.jpg'
+                    width='150px'></button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav mr-auto"> -->
+                <form class="d-flex">
+                    <input class="form-control me-3" type="search" placeholder="搜尋" aria-label="Search">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <form class="nav navbar-nav navbar-right login-before">
+                    <button class="btn" href="collection.html"><i class="fas fa-user"></i></button>
+                </form>
+                <form class="nav navbar-nav navbar-right login-after" hidden>
+                    <li><a href="collection.html"><i class="fas fa-user" id="user">&nbsp;&nbsp;</i>用戶名</a></li>
+                    <li><a href="javascript:void(0)" id="out">登出</a></li>
+                </form>
+
+                <!-- </ul> -->
+            </div>
+        </nav>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <div class="container container-small">
+            <h2>註冊</h2>
+            <!-- <form> -->
+            <input type="hidden" name="oper" value="register" />
+
+            <div class="form-group">
+                <label class="hahaha">帳號</label> <input type="text" class=" input form-control" id="account"
+                    placeholder="3 - 18位英數字">
+            </div>
+            <div class="form-group">
+                <label class="hahaha">信箱</label> <input type="text" class=" input form-control" id="email"
+                    placeholder="請輸入常用信箱">
+            </div>
+            <div class="form-group">
+                <label>密碼</label> <input type="password" class="form-control" id="password" placeholder="5 - 18位英數字">
+            </div>
+            <div class="form-group">
+                <label>確認密碼</label> <input type="password" class="form-control" id="passwordcheck" placeholder="再次輸入密碼">
+            </div>
+            <div class="form-group">
+                <label class="hahaha">會員名稱</label> <input type="text" class=" input form-control" id="name"
+                    placeholder="請輸入用戶名">
+                <button type="submit" class="btn btn-dark btn-block" id="register">註冊</button>
+
+                <!-- </form> -->
+                <div class="login">
+                    <span>已有帳號?</span> <a href="login.html">登入</a>
+                </div>
+            </div>
+        </div>
+
+            <!-- bottom -->
+        <div class="bottom clearfix">
+            <div id="returnTop" class="pull-right" title="return to Top">
+                <img src="pictures/scroll.png" alt="returnTop">
+            </div>
+        </div>
+        <footer>
+
+            <div class="copyrights">
+                <div class="copyright-text text-center">Copyright © 2021 </div>
+            </div>
+
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#register").click(function () {
+                    console.log("a")
+
+                    var data = {
+                        "account": $("#account").val(),
+                        "email": $("#email").val(),
+                        "passwd": $("#password").val(),
+                        "name": $("#name").val()
+                    };
+                    if ($("#password").val() == $("#passwordcheck").val()
+                        // && $("#account").val() != undefined
+                        && $("#email").val() != undefined
+                        && $("#password").val() != undefined
+                        && $("#name").val() != undefined) {
+                        $.ajax({
+
+                            url: "http://localhost:8081/labboot/pages/showactivity/register",
+                            type: "POST",
+                            contentType: 'application/json;charset=UTF-8',
+                            // dataType: 'json',
+                            data: JSON.stringify(data),
+                            statusCode: {
+                                201: function () {
+                                    alert("註冊成功")
+                                    $(location).attr('href', 'login.html');
+                                },
+                                204: function () {
+                                    console.log(data)
+                                }
+
+                            }
+                        })
+                    } else if ($("#password").val() != $("#passwordcheck").val()
+                        && $("#account").val() != undefined
+                        && $("#email").val() != undefined
+                        && $("#password").val() != undefined
+                        && $("#name").val() != undefined) {
+                        alert("請確認密碼")
+                    }else{
+                        alert("請輸入完整資料")
+                    }
+
+                })
+
+
+
+            })
+        </script>
+</body>
+
+</html>
