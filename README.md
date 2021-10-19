@@ -6,8 +6,8 @@
 -清晰的版面規劃，讓會員可以快速的根據規劃流程新增或編輯活動資訊。 <br>
 
 
-系統規劃流程請參考以下Draw.io連結: <br>
-https://app.diagrams.net/#G1YvPlBhN1FRtsvIBc6ReU8aCX7bPRvGnw <br>
+系統規劃流程請參考以下Google Drive連結: <br>
+https://drive.google.com/file/d/1YvPlBhN1FRtsvIBc6ReU8aCX7bPRvGnw/view?usp=sharing <br>
 
 UI設計草稿請見下方Figma連結: <br>
 https://www.figma.com/file/JCavtse63pXseG5PVpxYBT/MusicWeb <br>
