@@ -8,6 +8,7 @@
 
 系統規劃流程請參考以下Google Drive連結: <br>
 https://drive.google.com/file/d/1J7OFpwKuhhZ5nt5VP9UJO-PRG01JRQ5J/view?usp=sharing <br>
+![MusicWeb_DBDesign(v2)](https://user-images.githubusercontent.com/88480246/138889317-a2bb0bbd-06aa-4f3f-8b72-c5b6afc2785d.JPG) <br>
 
 UI設計草稿請見下方Figma連結: <br>
 https://www.figma.com/file/JCavtse63pXseG5PVpxYBT/MusicWeb <br>
