@@ -14,3 +14,5 @@ https://drive.google.com/file/d/1J7OFpwKuhhZ5nt5VP9UJO-PRG01JRQ5J/view?usp=shari
 
 UI設計草稿請見下方Figma連結: <br>
 https://www.figma.com/file/JCavtse63pXseG5PVpxYBT/MusicWeb <br>
+
+![UI](https://user-images.githubusercontent.com/88480246/138891961-b7d24eac-6a60-456f-adf4-8dda1af6b38c.jpg) <br>
