@@ -8,6 +8,7 @@
 
 系統規劃流程請參考以下Google Drive連結: <br>
 https://drive.google.com/file/d/1J7OFpwKuhhZ5nt5VP9UJO-PRG01JRQ5J/view?usp=sharing <br>
+[SysFlow.pdf](https://github.com/JRChenGoodToGo/JRChenGoodToGo.github.io/files/7418557/SysFlow.pdf) <br>
 
 
 UI設計草稿請見下方Figma連結: <br>
