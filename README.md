@@ -17,4 +17,4 @@ https://www.figma.com/file/JCavtse63pXseG5PVpxYBT/MusicWeb <br>
 
 ![UI](https://user-images.githubusercontent.com/88480246/138891961-b7d24eac-6a60-456f-adf4-8dda1af6b38c.jpg) <br>
 
-![太麻里-金針山](https://user-images.githubusercontent.com/88480246/159146016-2c0939c0-7c94-4ac8-9f5b-a616e1f00ea8.png)
+![plot](D:\work data\Training\Digital Langg\iii\小專_0721\imgs\airWindow.jpg)
