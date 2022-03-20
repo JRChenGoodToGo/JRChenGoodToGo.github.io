@@ -20,4 +20,4 @@ https://www.figma.com/file/JCavtse63pXseG5PVpxYBT/MusicWeb <br>
 <p align="center">
   <img src="D:\work data\Training\Digital Langg\iii\小專_0721\imgs\airWindow.jpg" width="350" title="hover text" />
 </p>
-![image](D:\work data\Training\Digital Langg\iii\小專_0721\imgs\airWindow.jpg)
+![image](D:\airWindow.jpg)
