@@ -18,5 +18,6 @@ https://www.figma.com/file/JCavtse63pXseG5PVpxYBT/MusicWeb <br>
 ![UI](https://user-images.githubusercontent.com/88480246/138891961-b7d24eac-6a60-456f-adf4-8dda1af6b38c.jpg) <br>
 
 <p align="center">
-  <img src="D:\work data\Training\Digital Langg\iii\小專_0721\imgs\airWindow.jpg" width="350" title="hover text">
+  <img src="D:\work data\Training\Digital Langg\iii\小專_0721\imgs\airWindow.jpg" width="350" title="hover text" />
 </p>
+![image description](D:\work data\Training\Digital Langg\iii\小專_0721\imgs\airWindow.jpg)
